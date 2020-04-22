@@ -9,7 +9,38 @@ function resolve(dir) {
   return path.join(__dirname, dir) // __dirname是项目目录地址
 }
 
+// // 导入compression-webpack-plugin
+// const CompressionWebpackPlugin = require('compression-webpack-plugin')
+// // const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const externals = {
+//   'vue': 'Vue',
+//   'vue-router': 'VueRouter',
+//   'vuex': 'Vuex',
+//   'axios': 'axios',
+//   'ELEMENT': 'element-ui'
+// }
+// // 定义压缩文件类型
+// const productionGzipExtensions = ['js', 'css']
+
 module.exports = {
+  // publicPath: '/vue-qiugu-ms/', //基本路径
+  // outputDir: 'dist',
+  // productionSourceMap: false,
+  // assetsDir: 'static',
+  // filenameHashing: true,
+  // pages: {
+  //   index: {
+  //     // page 的入口
+  //     entry: "src/main.js",
+  //     // 模板来源
+  //     template: "public/index.html", // 这里用来区分加载那个 html
+  //     // 在 dist/index.html 的输出
+  //     filename: "index.html",
+  //     // 在这个页面中包含的块，默认情况下会包含
+  //     // 提取出来的通用 chunk 和 vendor chunk。
+  //     chunks: ["chunk-vendors", "chunk-common", "index"]
+  //   }
+  // },
   css: {
     loaderOptions: {
       stylus: {
