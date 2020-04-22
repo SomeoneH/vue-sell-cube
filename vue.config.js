@@ -41,6 +41,7 @@ module.exports = {
   //     chunks: ["chunk-vendors", "chunk-common", "index"]
   //   }
   // },
+  publicPath: process.env.NODE_ENV === "production" ? "/vue-sell-cube" : "/",
   css: {
     loaderOptions: {
       stylus: {
